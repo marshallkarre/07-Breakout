@@ -265,13 +265,14 @@ class Block(pygame.sprite.Sprite):
 	
 	def draw(self,screen):	
 		screen.blit(self.image, (self.rect.x, self.rect.y))
-		
 
-screen_size = (1024,768)
-FPS = 60
+
+
+screen_size = (800,768)
+FPS = 30
 points_position = (10,10)
-lives_position = (1000,10)
-display_color = (255,255,255)
+lives_position = (750,10)
+display_color = (100,65,150)
 
 paddle_pos = (0,700)
 paddle_size = (80,15)
@@ -280,11 +281,11 @@ paddle_max_speed = 60
 
 num_blocks = 10
 num_block_rows = 4
-block_pos = (100,80)
-block_size = (80,15)
+block_pos = (50,50)
+block_size = (65,15)
 block_margin = 4
 block_points = 10
-block_color = (255,255,255)
+block_color = (255,25,25)
 
 ball_pos = (200,300)
 ball_size = 10
@@ -307,7 +308,7 @@ def main():
 	paddles = pygame.sprite.Group()
 	blocks = pygame.sprite.Group()
 	pos = (0,0)
-	
+
 	(start_x,start_y) = block_pos
 	(block_w,block_h) = block_size
 	for r in range(0,num_block_rows):
@@ -364,3 +365,4 @@ def main():
 
 if __name__ == '__main__':
 	main()
+
