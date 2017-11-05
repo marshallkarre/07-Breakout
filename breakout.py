@@ -276,7 +276,7 @@ display_color = (100,65,150)
 
 paddle_pos = (0,700)
 paddle_size = (80,15)
-paddle_color = (255,255,255)
+paddle_color = (100,65,150)
 paddle_max_speed = 60
 
 num_blocks = 10
